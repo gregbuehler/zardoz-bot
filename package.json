@@ -27,7 +27,7 @@
     "hubot-plusplus": "~1.1.0",
     "hubot-gitlab": "0.0.1",
     "underscore": "~1.6.0",
-    "clark": "0.0.6"
+    "clark": "*"
   },
   "engines": {
     "node": ">= 0.8.x",
