@@ -1,1 +1,15 @@
-["redis-brain.coffee", "shipit.coffee", "gitlab.coffee", "jira.cofeee"]
+[
+  "redis-brain.coffee"
+, "shipit.coffee"
+, "gitlab.coffee"
+, "jira.cofeee"
+
+, "achewood.coffee"
+, "futurama.coffee"
+, "botsnack.cofee"
+, "birthday.cofee"
+, "catfacts.cofee"
+, "calm-down.coffee"
+, "coin.coffee"
+, "corgime.coffee"
+]
