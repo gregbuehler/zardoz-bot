@@ -92,7 +92,10 @@ module.exports = (robot) ->
             when "merge_request"
               robot.send user, "Merge Request #{bold(hook.object_attributes.id)}: #{hook.object_attributes.title} (#{hook.object_attributes.state}) between #{bold(hook.object_attributes.source_branch)} and #{bold(hook.object_attributes.target_branch)}"
           if hook.object_attributes.description
-            robot.send user, ">> #{hook.object_attributes.description}"
+            description = hook.object_attributes.description.split("\n")
+            for line in description
+              do (line)
+                robot.send user, ">> #{line}"
 
   robot.router.post "/gitlab/system", (req, res) ->
     handler "system", req, res
