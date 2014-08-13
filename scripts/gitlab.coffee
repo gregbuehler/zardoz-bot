@@ -94,7 +94,7 @@ module.exports = (robot) ->
           if hook.object_attributes.description
             description = hook.object_attributes.description.split("\n")
             for line in description
-              do (line)
+              do (line) ->
                 robot.send user, ">> #{line}"
 
   robot.router.post "/gitlab/system", (req, res) ->
